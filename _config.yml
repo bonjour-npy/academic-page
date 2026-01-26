@@ -23,7 +23,7 @@ repository               : "bonjour-npy/academic-page"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "my_profile.png"
   name             : "Peiyang Ni"
   pronouns         : "he/him" # example: "she/her"  
   bio              : "Master Student of Computer Science"
