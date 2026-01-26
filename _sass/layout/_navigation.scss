@@ -13,7 +13,7 @@
   margin-bottom: 0;
   padding-left: 2em;
   padding-right: 2em;
-  font-family: $sans-serif;
+  font-family: $serif;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.30s;
@@ -66,7 +66,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: $sans-serif;
+    font-family: $serif;
   }
 
   li {
@@ -77,7 +77,7 @@
     a {
       margin-bottom: 0.25em;
       padding: 0.5em 1em;
-      font-family: $sans-serif;
+      font-family: $serif;
       font-size: 14px;
       font-weight: bold;
       line-height: 1.5;
@@ -126,7 +126,7 @@
     padding: 1em 2em;
     float: left;
     width: 50%;
-    font-family: $sans-serif;
+    font-family: $serif;
     font-size: $type-size-5;
     font-weight: bold;
     text-align: center;
@@ -205,6 +205,32 @@
   .visible-links {
     display: table;
 
+    // Desktop: keep the nav links centered, but pin the theme toggle to the far right.
+    // We do this without changing markup by absolutely positioning the toggle item.
+    @include breakpoint($large) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 3rem; // even spacing between the centered nav items
+      padding-left: 3rem; // balance the reserved space so the group stays truly centered
+      padding-right: 3rem; // reserve room for the pinned theme toggle
+
+      li {
+        display: block; // override table-cell from the default layout
+      }
+
+      // Remove the per-link margins and rely on `gap` so spacing is uniform.
+      > li > a {
+        margin: 0;
+      }
+
+      // The site title has extra right padding in the default theme; remove it for even spacing.
+      .masthead__menu-item--lg {
+        padding-right: 0;
+      }
+    }
+
     li {
       display: table-cell;
       vertical-align: middle;
@@ -226,11 +252,22 @@
     }
 
     #theme-toggle {
+      @include breakpoint($large) {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
       a {
         width: 25px;
         display: flex;
         justify-content: center;
         cursor: pointer;
+
+        @include breakpoint($large) {
+          margin-right: 0;
+        }
       }
     }
 
@@ -359,7 +396,7 @@
 .nav__title {
   margin: 0;
   padding: 0.5rem 1rem;
-  font-family: $sans-serif-narrow;
+  font-family: $serif;
   font-size: $type-size-5;
   font-weight: bold;
 }
@@ -368,7 +405,7 @@
   display: block;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
-  font-family: $sans-serif-narrow;
+  font-family: $serif;
   font-size: $type-size-6;
   font-weight: bold;
   text-transform: uppercase;
@@ -381,7 +418,7 @@
    ========================================================================== */
 
 .toc {
-  font-family: $sans-serif-narrow;
+  font-family: $serif;
   color: var(--global-text-color-light);
   text-transform: uppercase;
   letter-spacing: 1px;

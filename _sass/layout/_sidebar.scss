@@ -42,7 +42,7 @@
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: $serif;
   }
 
   h3, h4 {
@@ -50,7 +50,7 @@
   }
 
   p, li {
-    font-family: $sans-serif;
+    font-family: $serif;
     font-size: $type-size-6;
     line-height: 1.5;
   }
@@ -188,7 +188,7 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
+  font-family: $serif;
   font-size: $type-size-5;
 }
 
@@ -197,6 +197,21 @@
   @media screen and (min-width: 1024px) {
     display: block;
   }
+}
+
+// Allow long bio/location/employer strings to wrap in the desktop sidebar.
+// The dropdown/mobile view still uses `white-space: nowrap` for compactness.
+.sidebar .author__urls .author__desktop {
+  display: flex;
+  align-items: flex-start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.sidebar .author__urls .author__desktop .author__url-text {
+  flex: 1 1 auto;
+  min-width: 0; // required for wrapping inside flex containers
 }
 
 .author__pronouns {
@@ -221,7 +236,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: $serif;
   z-index: 10;
   position: relative;
   cursor: pointer;
@@ -305,6 +320,13 @@
 
   li {
     white-space: nowrap;
+  }
+
+  // Email / URLs can be long; allow wrapping for specific items.
+  .author__url {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   a {
