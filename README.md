@@ -8,4 +8,7 @@ Academic homepage for Peiyang Ni (bonjour-npy), built with Jekyll (AcademicPages
   - Publications list page: `_pages/publications.html`
   - CV page: `_pages/cv.md`
   - Publications entries: `_publications/*.md`
+- Local rendering:
+  - `bundle install` (first time only, to install dependencies)
+  - `bundle exec jekyll serve --livereload --force_polling`
 

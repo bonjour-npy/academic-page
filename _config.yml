@@ -26,11 +26,11 @@ author:
   avatar           : "my_profile.png"
   name             : "Peiyang Ni"
   pronouns         : "he/him" # example: "she/her"  
-  bio              : "Master Student of Computer Science"
+  bio              : "Master's student in Computer Science"
   location         : "Chengdu, China"
   employer         : "University of Electronic Science and Technology of China"
   uri              : # URL
-  email            : "peiyangni AT std.uestc.edu.cn" 
+  email            : "peiyangni[AT]std.uestc.edu.cn" 
 
   # Academic websites
   academia         : # URL

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+# title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,27 +11,20 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<!-- * Ph.D in Version Control Theory, GitHub University, 2018 (expected) -->
+* M.E. in Chengdu, University of Electronic Science and Technology of China (UESTC), 2024 -- Present
+* B.E. in Guilin, Guilin University of Electronic Technology (GUET), 2020 -- 2024
 
-Work experience
+Honors and Awards
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* National Scholarship for Undergraduate Students, Ministry of Education of China, 2022--2023
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Guangxi Zhuang Autonomous Region People's Government Scholarship, 2021
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* CASC Public Welfare Scholarship (Third Prize), China Aerospace Science and Technology Corporation, 2022
+
+* Outstanding Graduate of Guangxi Zhuang Autonomous Region, 2024
+
 Skills
 ======
 * Skill 1

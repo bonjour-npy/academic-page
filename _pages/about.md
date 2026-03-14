@@ -1,10 +1,19 @@
 ---
 permalink: /
-title: "Welcome"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Welcome to my academic homepage! Here, you can find information about my research interests, publications, and contact details. Feel free to explore the site and reach out if you have any questions or collaboration ideas.
+Biography
+======
+Peiyang Ni is currently a Master's student at the University of Electronic Science and Technology of China (UESTC), advised by Prof. [Ping Hu](https://scholar.google.com/citations?user=ddrD2TgAAAAJ&hl=en) and Prof. [Xiaofeng Zhu](https://scholar.google.com/citations?hl=en&user=-bk1CrcAAAAJ). 
+He received his bachelor's degree from Guilin University of Electronic Technology (GUET).
+
+His research interests include computer vision, generative models, and 3D perception.
+
+News
+======
+* Feb, 2026: Our paper "Structure-to-Intensity Diffusion for Adverse-Weather LiDAR Generation" has been accepted by [CVPR 2026](https://cvpr.thecvf.com/Conferences/2026).
