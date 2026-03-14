@@ -66,6 +66,62 @@
   }
 }
 
+.cv-list-publications {
+  margin: 0.75em 0 1.5em;
+  padding-left: 1.25em;
+}
+
+.cv-list-publications > li,
+.cv-talk-item {
+  margin-bottom: 0.9em;
+}
+
+.cv-publication-item,
+.cv-talk-item {
+  padding-left: 0.1em;
+}
+
+.cv-publication-entry,
+.cv-talk-entry {
+  display: block;
+}
+
+.cv-publication-title,
+.cv-talk-title {
+  margin: 0;
+  font-size: $type-size-5;
+  line-height: 1.35;
+  border-bottom: 0;
+}
+
+.cv-publication-title a,
+.cv-talk-title a {
+  text-decoration: none;
+}
+
+.cv-publication-title a:hover,
+.cv-talk-title a:hover {
+  text-decoration: underline;
+}
+
+.cv-publication-permalink,
+.cv-talk-permalink {
+  margin-left: 0.35em;
+  opacity: 0.65;
+}
+
+.cv-publication-citation,
+.cv-talk-meta,
+.cv-talk-details {
+  margin: 0.2em 0 0;
+  font-size: $type-size-6;
+  line-height: 1.45;
+}
+
+.cv-talk-meta {
+  color: var(--global-text-color-light);
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
