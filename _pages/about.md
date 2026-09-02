@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "Peiyang Ni"
+seo_title: "Peiyang Ni (倪培洋) | Academic Homepage"
+description: "Peiyang Ni (倪培洋) is a Computer Science master's student at UESTC researching diffusion models, rectified flow, and physics-informed generative modeling for adverse-weather LiDAR."
 author_profile: true
 show_page_title: false
 redirect_from: 
@@ -13,7 +15,7 @@ redirect_from:
 <section id="biography" class="home-section home-section--first" aria-labelledby="biography-title">
   <h1 id="biography-title">Biography</h1>
   <p>
-    I am a Master's student in Computer Science at the
+    I am Peiyang Ni (倪培洋), a Master's student in Computer Science at the
     <a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of China (UESTC)</a>,
     advised by Prof. <a href="https://feinanshan.github.io/">Ping Hu</a> and
     Prof. <a href="https://scholar.google.com/citations?user=-bk1CrcAAAAJ">Xiaofeng Zhu</a>.
