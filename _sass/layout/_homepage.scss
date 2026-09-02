@@ -92,8 +92,19 @@ html {
   .sidebar .author__urls .author__desktop {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 0.86rem;
     line-height: 1.35;
+  }
+
+  .sidebar .author__urls > li {
+    margin-bottom: 0.4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .sidebar .author__urls i {
