@@ -73,7 +73,7 @@ redirect_from:
           <span class="experience-item__date">2024–Present</span>
         </div>
         <p class="experience-item__role">M.Eng. in Computer Science · Chengdu, China</p>
-        <p>GPA: 3.98 / 4.00 · Advisors: Prof. Ping Hu and Prof. Xiaofeng Zhu</p>
+        <p>GPA: 3.98 / 4.00 · Advisors: Prof. <a href="https://feinanshan.github.io/">Ping Hu</a> and Prof. <a href="https://scholar.google.com/citations?user=-bk1CrcAAAAJ">Xiaofeng Zhu</a></p>
       </div>
     </article>
 
