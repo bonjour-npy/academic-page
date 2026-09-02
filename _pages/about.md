@@ -31,7 +31,7 @@ redirect_from:
 
   <article class="publication-card">
     <a class="publication-card__media" href="https://openaccess.thecvf.com/content/CVPR2026/html/Ni_Structure-to-Intensity_Diffusion_for_Adverse-Weather_LiDAR_Generation_CVPR_2026_paper.html" aria-label="Open the SiD paper">
-      <img src="{{ base_path }}/images/sid-overview.png" alt="Overview of Structure-to-Intensity Diffusion and Real-Prior Weather Simulation" loading="lazy">
+      <img src="{{ site.baseurl }}/images/sid-overview.png" alt="Overview of Structure-to-Intensity Diffusion and Real-Prior Weather Simulation" loading="lazy">
     </a>
     <div class="publication-card__body">
       <h3 class="publication-card__title">
