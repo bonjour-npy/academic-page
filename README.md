@@ -10,9 +10,8 @@ Academic homepage for Peiyang Ni (bonjour-npy), built with Jekyll (AcademicPages
   - Publications entries: `_publications/*.md`
 - Local rendering:
   - `bundle install` (first time only, to install dependencies)
-  - `bundle exec jekyll serve --livereload --force_polling`
+  - `bundle exec jekyll serve --config _config.yml,_config.dev.yml --host localhost`
   - Open `http://localhost:4000/` in a web browser to view the site locally.
 - Deployment:
   - `git add . && git commit -m "Update content" && git push`
   - GitHub Pages will automatically build and deploy the site after pushing to the repository.
-

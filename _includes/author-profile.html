@@ -15,7 +15,13 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name">
+      <span>{{ author.name }}</span>
+      {% if author.name_zh %}
+        <span class="author__name-divider" aria-hidden="true"></span>
+        <span lang="zh-CN">{{ author.name_zh }}</span>
+      {% endif %}
+    </h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>

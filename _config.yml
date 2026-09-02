@@ -25,20 +25,21 @@ author:
   # Biographic information
   avatar           : "my_profile.png"
   name             : "Peiyang Ni"
-  pronouns         : "he/him" # example: "she/her"  
+  name_zh          : "倪培洋"
+  pronouns         : "he/him" # example: "she/her"
   bio              : "Master's student in Computer Science"
   location         : "Chengdu, China"
-  employer         : "University of Electronic Science and Technology of China"
+  employer         : "UESTC"
   uri              : # URL
-  email            : "peiyangni[AT]std.uestc.edu.cn" 
+  email            : "peiyangni@std.uestc.edu.cn"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  # googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=6KWnnUQAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  # orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0002-6217-6880"
   semantic         : # URL
   ssrn             : # URL
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

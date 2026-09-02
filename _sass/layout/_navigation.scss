@@ -212,9 +212,9 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      gap: 3rem; // even spacing between the centered nav items
-      padding-left: 3rem; // balance the reserved space so the group stays truly centered
-      padding-right: 3rem; // reserve room for the pinned theme toggle
+      gap: 2rem; // even spacing between the centered nav items
+      padding-left: 2.75rem; // balance the reserved space so the group stays truly centered
+      padding-right: 2.75rem; // reserve room for the pinned theme toggle
 
       li {
         display: block; // override table-cell from the default layout

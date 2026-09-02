@@ -6,6 +6,43 @@
    TYPOGRAPHY
    ========================================================================== */
 
+/*
+ * Libertinus is bundled with the site instead of loaded from a CDN. This keeps
+ * the typography identical in local previews, on GitHub Pages, and on devices
+ * that do not have Libertinus installed.
+ */
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("../fonts/libertinus/libertinus-serif-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("../fonts/libertinus/libertinus-serif-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("../fonts/libertinus/libertinus-serif-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("../fonts/libertinus/libertinus-serif-bold-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
 /* Used to set the size for <em> */
 $doc-font-size              : 16;
 
@@ -14,8 +51,7 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* System typefaces */
-// Palatino-like serif stack (macOS: Palatino; Windows: Palatino Linotype/Book Antiqua; Linux: URW Palladio L).
-$serif                      : "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", "TeX Gyre Pagella", Georgia, Times, serif;
+$serif                      : "Libertinus Serif", "Linux Libertine", Georgia, "Times New Roman", serif;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
