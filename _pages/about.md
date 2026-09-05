@@ -61,6 +61,34 @@ redirect_from:
       </div>
     </div>
   </article>
+
+  <article class="publication-card">
+    <div class="publication-card__media">
+      <img src="{{ site.baseurl }}/images/a2cflow-framework.png" alt="Overview of A2CFlow and Range-Aware Flow Scheduling for adverse-weather LiDAR restoration" loading="lazy">
+    </div>
+    <div class="publication-card__body">
+      <h3 class="publication-card__title">A2CFlow: Range-Aware Rectified Flow for Efficient Adverse-Weather LiDAR Restoration</h3>
+      <p class="publication-card__authors">
+        <strong>Peiyang Ni</strong>, Xiaorui Sun, Lu Zhang, Heng Tao Shen, Xiaofeng Zhu, and Ping Hu
+      </p>
+      <p class="publication-card__venue">Under Review at IEEE Robotics and Automation Letters (RA-L)</p>
+      <p class="publication-card__summary">
+        A conditional rectified-flow framework that restores clean range-and-reflectance LiDAR scans from a single
+        adverse-weather observation, with range-aware flow scheduling and efficient few-step distillation.
+      </p>
+      <div class="publication-links" aria-label="Publication resources">
+        <span class="publication-link publication-link--disabled" aria-disabled="true" title="Under review; paper link unavailable">
+          <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Paper
+        </span>
+        <span class="publication-link publication-link--disabled" aria-disabled="true" title="Coming soon">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i> Project Page
+        </span>
+        <span class="publication-link publication-link--disabled" aria-disabled="true" title="Coming soon">
+          <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+        </span>
+      </div>
+    </div>
+  </article>
 </section>
 
 <section id="experience" class="home-section" aria-labelledby="experience-title">
