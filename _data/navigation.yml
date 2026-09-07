@@ -25,3 +25,4 @@ main:
 
   - title: "Blog"
     url: https://bonjour-npy.github.io/blog/
+    external: true
