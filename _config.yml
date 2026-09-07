@@ -16,6 +16,7 @@ description              : &description "Peiyang Ni (倪培洋) is a Computer Sc
 url                      : https://bonjour-npy.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/academic-page" # the subpath of your site, e.g. "/blog"
+canonical_site_url       : https://bonjour-npy.github.io # Prefer the root deployment in search results while keeping /academic-page/ available.
 repository               : "bonjour-npy/academic-page"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
