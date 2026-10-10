@@ -143,16 +143,11 @@ redirect_from:
   <div class="service-grid">
     <article class="service-card">
       <h3><i class="fa-solid fa-users" aria-hidden="true"></i> Conference Reviewing</h3>
-      <ul class="service-list">
-        <li>PRCV</li>
-        <li>VCIP</li>
-      </ul>
+      <p class="service-list">CVPR, PRCV, VCIP</p>
     </article>
     <article class="service-card">
       <h3><i class="fa-solid fa-book-open" aria-hidden="true"></i> Journal Reviewing</h3>
-      <ul class="service-list">
-        <li>IEEE Robotics and Automation Letters (RA-L)</li>
-      </ul>
+      <p class="service-list">IEEE Robotics and Automation Letters (RA-L)</p>
     </article>
   </div>
 </section>
