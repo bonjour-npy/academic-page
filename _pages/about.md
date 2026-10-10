@@ -26,6 +26,12 @@ redirect_from:
     for high-fidelity 3D perception. I am particularly interested in LiDAR sensing and measurement formation, as well
     as realistic generation and restoration under adverse weather.
   </p>
+  <p>
+    I am currently applying to Computer Science PhD programs for Fall 2027. My TOEFL iBT score is 5.0/6 (100/120)
+    (Reading 5.0, Listening 5.0, Speaking 4.5, Writing 5.5; CEFR C1). If you are recruiting PhD students
+    and see a potential fit with my research interests, please feel free to
+    <a href="mailto:peiyangni@std.uestc.edu.cn">contact me</a>.
+  </p>
 </section>
 
 <section id="publications" class="home-section" aria-labelledby="publications-title">
