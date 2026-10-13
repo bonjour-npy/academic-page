@@ -14,6 +14,10 @@ Peiyang Ni 的学术主页，基于 Jekyll（AcademicPages / Minimal Mistakes）
 - Publications 条目：`_publications/*.md`
 - 主页样式：`_sass/layout/_homepage.scss`
 - 顶部导航：`_data/navigation.yml`
+- 顶部个人介绍：`_includes/homepage-profile.html`，姓名、照片和联系方式读取 `_config.yml` 的 `author`
+- 主页导航与手机菜单：`_includes/homepage-navigation.html`；栏目跳转和高亮逻辑：`assets/js/section-nav.js`
+
+主页使用 `homepage: true` 和 `author_profile: false`，将个人信息融入正文顶部；其他页面沿用原布局。调整顶部介绍区或导航时，同时检查窄屏、深色模式和栏目跳转位置。
 
 ## 本地预览主页
 

@@ -1,0 +1,23 @@
+{% assign profile = site.author %}
+<div class="profile-intro__contact">
+<img class="profile-intro__portrait" src="{{ site.baseurl }}/images/{{ profile.avatar }}" alt="{{ profile.name }}" width="160" height="200" fetchpriority="high">
+  <ul class="profile-intro__links" aria-label="Contact and academic profiles">
+    {% if profile.email %}<li><a href="mailto:{{ profile.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ profile.email }}</a></li>{% endif %}
+    {% if profile.googlescholar %}<li><a href="{{ profile.googlescholar }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i> Google Scholar</a></li>{% endif %}
+    {% if profile.orcid %}<li><a href="{{ profile.orcid }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" aria-hidden="true"></i> ORCID</a></li>{% endif %}
+    {% if profile.github %}<li><a href="https://github.com/{{ profile.github }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>{% endif %}
+  </ul>
+</div>
+<div class="profile-intro__main">
+<header class="profile-intro__identity">
+  <div class="profile-intro__name-row">
+    <h1>{{ profile.name }}{% if profile.name_zh %}<span class="profile-intro__name-zh" lang="zh">{{ profile.name_zh }}</span>{% endif %}</h1>
+    {% if profile.pronouns %}<span class="profile-intro__pronouns">{{ profile.pronouns }}</span>{% endif %}
+  </div>
+  <p class="profile-intro__details">
+    <span>{{ profile.bio }}</span>
+    {% if profile.employer %}<a href="https://en.uestc.edu.cn/"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> {% if profile.employer == 'UESTC' %}University of Electronic Science and Technology of China{% else %}{{ profile.employer }}{% endif %}</a>{% endif %}
+  </p>
+</header>
+{{ include.biography }}
+</div>

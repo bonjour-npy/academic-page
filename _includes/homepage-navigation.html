@@ -1,0 +1,16 @@
+<div class="masthead masthead--homepage">
+  <div class="masthead__inner-wrap">
+    <nav class="homepage-nav" aria-label="Main navigation">
+      <a class="homepage-nav__home" href="{{ site.baseurl }}/#top" aria-label="{{ site.author.name }} — back to top">{{ site.author.name }}</a>
+      <ul id="homepage-nav-links" class="homepage-nav__links">
+        {% for link in site.data.navigation.main %}
+          {% assign domain = site.baseurl %}
+          {% if link.url contains 'http' %}{% assign domain = '' %}{% endif %}
+          <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}{% if link.external %}<i class="fa-solid fa-arrow-up-right-from-square masthead__external-icon" aria-hidden="true"></i>{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+      <button id="theme-toggle" class="homepage-nav__theme" type="button" aria-label="Toggle light or dark theme"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></button>
+      <button class="homepage-nav__toggle" type="button" aria-expanded="false" aria-controls="homepage-nav-links" aria-label="Open navigation menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </nav>
+  </div>
+</div>

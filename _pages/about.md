@@ -3,17 +3,16 @@ permalink: /
 title: "Peiyang Ni"
 seo_title: "Peiyang Ni (倪培洋) | Academic Homepage"
 description: "Peiyang Ni (倪培洋) is a Computer Science master's student at UESTC researching diffusion models, rectified flow, and physics-informed generative modeling for adverse-weather LiDAR."
-author_profile: true
+author_profile: false
+homepage: true
 show_page_title: false
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-<div id="top" class="homepage-intro" aria-hidden="true"></div>
-
-<section id="biography" class="home-section home-section--first" aria-labelledby="biography-title">
-  <h1 id="biography-title">Biography</h1>
+{% capture biography %}
+<section id="biography" class="home-section home-section--first profile-intro__biography" aria-label="Introduction">
   <p>
     I am Peiyang Ni (倪培洋), a Master's student in Computer Science at the
     <a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of China (UESTC)</a>,
@@ -33,6 +32,11 @@ redirect_from:
     <a href="mailto:peiyangni@std.uestc.edu.cn">contact me</a>.
   </p>
 </section>
+{% endcapture %}
+
+<div id="top" class="profile-intro">
+  {% include homepage-profile.html biography=biography %}
+</div>
 
 <section id="publications" class="home-section" aria-labelledby="publications-title">
   <h2 id="publications-title">Publications</h2>

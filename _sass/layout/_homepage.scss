@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -13,125 +13,372 @@ html {
   }
 }
 
-/* Give the profile rail and article a deliberate gap on desktop. */
-@media screen and (min-width: $large) {
-  .sidebar {
-    float: left;
-    width: 220px;
-    max-width: 220px;
-    margin-right: 0;
-  }
+/* A single reading column, shared by the header, profile and CV sections. */
+body.homepage {
+  /* Shared type scale: section headings, item headings, body, supporting text. */
+  --homepage-font-section: 1.35rem;
+  --homepage-font-item: 1.02rem;
+  --homepage-font-body: 0.96rem;
+  --homepage-font-secondary: 0.9rem;
+  --homepage-font-small: 0.86rem;
+  padding-top: 0 !important;
 
-  .page {
-    float: right;
-    width: calc(100% - 286px);
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .author__avatar img {
-    max-width: 152px;
+  .page__footer-copyright {
+    font-size: var(--homepage-font-small);
   }
 }
 
-@media screen and (min-width: $x-large) {
-  .sidebar {
-    width: 240px;
-    max-width: 240px;
-  }
-
-  .page {
-    width: calc(100% - 320px);
-  }
-
-  .author__avatar img {
-    max-width: 164px;
-  }
+.masthead--homepage {
+  position: sticky;
+  top: 0;
 }
 
-.sidebar .author__name {
-  line-height: 1.25;
-}
+#main.homepage-main {
+  max-width: 1140px;
+  margin-top: 1.4rem;
+  padding: 0 1.25rem;
 
-.sidebar .author__name-divider {
-  display: inline-block;
-  width: 1px;
-  height: 0.9em;
-  margin: 0 0.34rem;
-  vertical-align: -0.06em;
-  background: var(--global-border-color);
-}
-
-/* Keep the profile rail readable without letting the portrait dominate it. */
-@media screen and (min-width: $large) {
-  .sidebar .author__name {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.42rem;
-    margin: 0.5rem 0 0.3rem;
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-
-  .sidebar .author__name-divider {
-    height: 1em;
-    margin: 0;
-    vertical-align: baseline;
-  }
-
-  .sidebar .author__pronouns,
-  .sidebar .author__bio {
-    margin: 0 0 0.3rem;
-    font-size: 0.86rem;
-    line-height: 1.35;
-  }
-
-  .sidebar .author__bio {
-    // margin-bottom: 0.62rem;
-    margin-bottom: 0.4rem;
-  }
-
-  .sidebar .author__urls li,
-  .sidebar .author__urls a,
-  .sidebar .author__urls .author__desktop {
-    display: flex;
-    align-items: center;
-    font-size: 0.86rem;
-    line-height: 1.35;
-  }
-
-  .sidebar .author__urls > li {
-    min-height: 1.48rem;
-    margin: 0;
-    padding: 0.12rem 0;
-
-    & + li {
-      margin-top: 0.15rem;
-    }
-  }
-
-  .sidebar .author__urls a {
+  > .page {
+    float: none;
     width: 100%;
     margin: 0;
     padding: 0;
   }
+}
 
-  .sidebar .author__urls i {
-    flex: 0 0 1.25em;
-    align-self: center;
-    line-height: 1;
+.masthead--homepage .masthead__inner-wrap {
+  max-width: 1140px;
+  padding: 0.55rem 1.25rem;
+}
+
+.homepage-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  min-height: 2.3rem;
+
+  a {
+    color: var(--global-masthead-link-color);
+    text-decoration: none;
+  }
+
+  &__home {
+    flex-shrink: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin: 0 0 0 auto;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: block;
+      padding: 0.35rem 0;
+      border-bottom: 2px solid transparent;
+      font-size: var(--homepage-font-secondary, 0.9rem);
+      line-height: 1.3;
+
+      &:hover {
+        color: var(--global-link-color-hover);
+      }
+    }
+
+    .selected a {
+      color: var(--global-link-color);
+      border-bottom-color: var(--global-link-color);
+      pointer-events: auto;
+      cursor: pointer;
+    }
+  }
+
+  .masthead__external-icon {
+    margin-left: 0.35em;
+    font-size: 0.68em;
+    vertical-align: 0.08em;
+    opacity: 0.72;
+  }
+
+  &__theme,
+  &__toggle {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+    border: 1px solid var(--global-border-color);
+    border-radius: 6px;
+    color: var(--global-masthead-link-color);
+    background: var(--global-bg-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--global-link-color);
+    outline-offset: 4px;
   }
 }
 
-.homepage-intro {
-  height: 1px;
+.profile-intro {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  column-gap: 1.8rem;
+  row-gap: 0.65rem;
+  align-items: stretch;
+  scroll-margin-top: var(--homepage-anchor-offset, 5rem);
+  margin-bottom: 0.8rem;
+
+  &__contact {
+    grid-column: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__portrait {
+    display: block;
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--global-border-color);
+    border-radius: 8px;
+  }
+
+  &__main {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  &__identity {
+    padding-bottom: 0.72rem;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  &__name-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.75rem;
+
+    h1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.65rem;
+      margin: 0;
+      font-size: 1.9rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__name-zh {
+    padding-left: 0.65rem;
+    border-left: 1px solid var(--global-dark-border-color);
+    font-size: 0.9em;
+  }
+
+  &__pronouns {
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+  }
+
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2rem 0.9rem;
+    margin: 0.75rem 0 0 !important;
+    font-size: var(--homepage-font-secondary, 0.9rem) !important;
+    line-height: 1.45;
+
+    a,
+    span {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.35rem;
+    }
+
+    i {
+      flex-shrink: 0;
+      color: var(--global-text-color-light);
+      font-size: 0.8em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin: 0.75rem 0 0 !important;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0;
+      font-size: var(--homepage-font-secondary, 0.9rem);
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      overflow-wrap: anywhere;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    i {
+      flex-shrink: 0;
+      width: 1em;
+      text-align: center;
+    }
+  }
+
+  .profile-intro__biography {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .homepage-nav {
+    gap: 0.6rem;
+
+    &__theme {
+      margin-left: auto;
+    }
+
+    &__toggle {
+      display: inline-flex;
+    }
+
+    &__links {
+      display: none;
+      position: absolute;
+      top: calc(100% + 0.55rem);
+      right: 0;
+      left: 0;
+      margin: 0;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--global-border-color);
+      border-radius: 8px;
+      background: var(--global-bg-color);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+      a {
+        padding: 0.65rem 0;
+      }
+    }
+
+    &--open .homepage-nav__links {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #main.homepage-main {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  .masthead--homepage .masthead__inner-wrap {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .profile-intro {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 0.75rem;
+
+    &__main {
+      display: contents;
+    }
+
+    &__contact {
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      gap: 0.65rem 0.85rem;
+      align-items: center;
+    }
+
+    &__identity {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &__portrait {
+      width: 88px;
+      height: 110px;
+    }
+
+    &__details {
+      margin: 0.4rem 0 0 !important;
+    }
+
+    &__name-row {
+      gap: 0.2rem 0.6rem;
+
+      h1 {
+        gap: 0.3rem 0.45rem;
+        font-size: 1.45rem;
+      }
+    }
+
+    &__name-zh {
+      padding-left: 0.45rem;
+    }
+
+    &__biography {
+      grid-column: 1 / -1;
+    }
+
+    &__links {
+      grid-column: 2;
+      grid-row: 1;
+      margin: 0 !important;
+      gap: 0.35rem;
+
+      li {
+        font-size: var(--homepage-font-secondary, 0.9rem);
+      }
+
+      li:first-child a {
+        overflow-wrap: anywhere;
+      }
+    }
+  }
 }
 
 .home-section {
-  scroll-margin-top: 5.5rem;
+  scroll-margin-top: var(--homepage-anchor-offset, 5.5rem);
   padding: 1.45rem 0 0;
 
   &#publications {
@@ -148,7 +395,7 @@ html {
     margin: 0 0 0.72rem;
     padding: 0 0 0.32rem 0.72rem;
     border-bottom: 1px solid var(--global-border-color);
-    font-size: 1.35rem;
+    font-size: var(--homepage-font-section, 1.35rem);
 
     &::before {
       position: absolute;
@@ -164,7 +411,7 @@ html {
 
   p {
     margin-bottom: 0.68em;
-    font-size: 0.96rem;
+    font-size: var(--homepage-font-body, 0.96rem);
     line-height: 1.42;
   }
 }
@@ -215,7 +462,7 @@ html {
 
   &__title {
     margin: 0 0 0.3rem;
-    font-size: 1.02rem;
+    font-size: var(--homepage-font-item, 1.02rem);
     line-height: 1.22;
 
     a {
@@ -232,7 +479,7 @@ html {
   &__venue,
   &__summary {
     margin: 0 0 0.25rem !important;
-    font-size: 0.86rem !important;
+    font-size: var(--homepage-font-secondary, 0.9rem) !important;
     line-height: 1.36 !important;
   }
 
@@ -267,7 +514,7 @@ html {
   border-radius: 999px;
   color: var(--global-text-color);
   background: var(--global-bg-color);
-  font-size: 0.83rem;
+  font-size: var(--homepage-font-small, 0.86rem);
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
@@ -296,7 +543,7 @@ html {
 .section-kicker {
   margin: 0 0 0.52rem;
   color: var(--global-text-color-light);
-  font-size: 0.96rem;
+  font-size: var(--homepage-font-item, 1.02rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -345,14 +592,14 @@ html {
 
     h4 {
       margin: 0;
-      font-size: 1.02rem;
+      font-size: var(--homepage-font-item, 1.02rem);
       line-height: 1.3;
     }
 
     .experience-item__date {
       flex: 0 0 auto;
       color: var(--global-text-color-light);
-      font-size: 0.9rem;
+      font-size: var(--homepage-font-secondary, 0.9rem);
       font-weight: 700;
     }
   }
@@ -360,7 +607,7 @@ html {
   p {
     margin: 0.18rem 0 0 !important;
     color: var(--global-text-color-light);
-    font-size: 0.94rem !important;
+    font-size: var(--homepage-font-body, 0.96rem) !important;
     line-height: 1.42 !important;
   }
 
@@ -382,7 +629,7 @@ html {
     margin: 0;
     padding: 0.42rem 0;
     border-bottom: 1px solid var(--global-border-color);
-    font-size: 0.95rem;
+    font-size: var(--homepage-font-body, 0.96rem);
     line-height: 1.38;
 
     &:first-child {
@@ -395,7 +642,7 @@ html {
 
     time {
       color: var(--global-text-color-light);
-      font-size: 0.9rem;
+      font-size: var(--homepage-font-secondary, 0.9rem);
       white-space: nowrap;
     }
   }
@@ -416,7 +663,7 @@ html {
 
   h3 {
     margin: 0;
-    font-size: 1rem;
+    font-size: var(--homepage-font-item, 1.02rem);
 
     i {
       width: 1.25rem;
@@ -433,7 +680,7 @@ html {
   margin-bottom: 0;
   padding: 0;
 
-  font-size: 0.94rem;
+  font-size: var(--homepage-font-body, 0.96rem);
   line-height: 1.38;
 }
 
@@ -448,6 +695,10 @@ html {
 }
 
 @media screen and (max-width: $small) {
+  body.homepage {
+    --homepage-font-section: 1.25rem;
+  }
+
   .home-section {
     padding-top: 1.2rem;
 
@@ -457,7 +708,7 @@ html {
 
     > h1,
     > h2 {
-      font-size: 1.25rem;
+      font-size: var(--homepage-font-section, 1.25rem);
     }
   }
 
