@@ -109,7 +109,7 @@ redirect_from:
           <span class="experience-item__date">2024–Present</span>
         </div>
         <p class="experience-item__role">M.Eng. in Computer Science · Advisors: Prof. <a href="https://feinanshan.github.io/">Ping Hu</a> and Prof. <a href="https://scholar.google.com/citations?user=-bk1CrcAAAAJ">Xiaofeng Zhu</a></p>
-        <p>GPA: 3.98 / 4.00 ｜ National Scholarship (2%) ｜ Outstanding Graduate Student (Master's)</p>
+        <p>GPA: 3.98 / 4.00 ｜ National Scholarship (approx. 2% nationally) ｜ Outstanding Graduate Student</p>
       </div>
     </article>
 
@@ -121,7 +121,7 @@ redirect_from:
           <span class="experience-item__date">2020–2024</span>
         </div>
         <p class="experience-item__role">B.Eng. in Computer Science</p>
-        <p>GPA: 89.8 / 100 ｜ National Scholarship (approx. 0.2% nationally) ｜ Outstanding Graduate (Bachelor's)</p>
+        <p>Weighted Average: 89.8 / 100 ｜ National Scholarship (approx. 0.2% nationally) ｜ Province Outstanding Graduate</p>
       </div>
     </article>
   </div>
@@ -130,11 +130,11 @@ redirect_from:
 <section id="awards" class="home-section" aria-labelledby="awards-title">
   <h2 id="awards-title">Awards</h2>
   <ul class="award-list">
-    <li><span><strong>National Scholarship for Graduate Students (2%)</strong>, <em>Ministry of Education of China</em></span><time>2026</time></li>
+    <li><span><strong>National Scholarship for Graduate Students (approx. 2% nationally)</strong>, <em>Ministry of Education of China</em></span><time>2026</time></li>
     <li><span><strong>National Scholarship for Undergraduate Students (approx. 0.2% nationally)</strong>, <em>Ministry of Education of China</em></span><time>2023</time></li>
     <li><span><strong>CASC Scholarship (Third Prize)</strong>, <em>China Aerospace Science and Technology Corporation</em></span><time>2022</time></li>
     <li><span><strong>Guangxi Zhuang Autonomous Region People's Government Scholarship</strong></span><time>2021</time></li>
-    <li><span>Outstanding Graduate of Guangxi Zhuang Autonomous Region</span><time>2024</time></li>
+    <li><span>Province Outstanding Graduate</span><time>2024</time></li>
     <li><span>Outstanding Graduate Student, <em>University of Electronic Science and Technology of China</em></span><time>2025, 2026</time></li>
   </ul>
 </section>
