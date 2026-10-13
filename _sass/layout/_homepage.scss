@@ -70,6 +70,9 @@ body.homepage {
   }
 
   &__links {
+    align-self: center;
+    width: max-content;
+    max-width: 100%;
     display: flex;
     align-items: center;
     gap: 1.1rem;
@@ -151,6 +154,7 @@ body.homepage {
 
   &__portrait {
     display: block;
+    margin-inline: auto;
     width: 160px;
     height: 200px;
     object-fit: cover;
@@ -363,6 +367,8 @@ body.homepage {
     &__links {
       grid-column: 2;
       grid-row: 1;
+      align-self: stretch;
+      width: auto;
       margin: 0 !important;
       gap: 0.35rem;
 
