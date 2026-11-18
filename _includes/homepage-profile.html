@@ -12,6 +12,7 @@
 <header class="profile-intro__identity">
   <div class="profile-intro__name-row">
     <h1>{{ profile.name }}{% if profile.name_zh %}<span class="profile-intro__name-zh" lang="zh">{{ profile.name_zh }}</span>{% endif %}</h1>
+    {% if profile.pronunciation %}<span class="profile-intro__pronunciation" title="Pronunciation">[{{ profile.pronunciation }}]</span>{% endif %}
     {% if profile.pronouns %}<span class="profile-intro__pronouns">{{ profile.pronouns }}</span>{% endif %}
   </div>
   <p class="profile-intro__details">

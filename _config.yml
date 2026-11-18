@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Peiyang Ni"
 title_separator          : "-"
 name                     : &name "Peiyang Ni"
-description              : &description "Peiyang Ni (倪培洋) is a Computer Science master's student at UESTC researching diffusion models, rectified flow, and physics-informed generative modeling for adverse-weather LiDAR."   # Default search and sharing description
+description              : &description "Peiyang Ni (倪培洋) is a Computer Science master's student at UESTC researching generative modeling for 3D perception, sensor simulation, world modeling, and robotics."   # Default search and sharing description
 url                      : https://bonjour-npy.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/academic-page" # the subpath of your site, e.g. "/blog"
@@ -27,6 +27,7 @@ author:
   avatar           : "my_profile.png"
   name             : "Peiyang Ni"
   name_zh          : "倪培洋"
+  pronunciation    : "/peɪ jɑːŋ niː/"
   pronouns         : "he/him" # example: "she/her"
   bio              : "Master's student in Computer Science"
   location         : "Chengdu, China"

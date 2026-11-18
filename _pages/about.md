@@ -1,8 +1,8 @@
 ---
 permalink: /
 title: "Peiyang Ni"
-seo_title: "Peiyang Ni (倪培洋) | Academic Homepage"
-description: "Peiyang Ni (倪培洋) is a Computer Science master's student at UESTC researching diffusion models, rectified flow, and physics-informed generative modeling for adverse-weather LiDAR."
+seo_title: "Peiyang Ni"
+description: "Peiyang Ni (倪培洋) is a Computer Science master's student at UESTC researching generative modeling for 3D perception, sensor simulation, world modeling, and robotics."
 author_profile: false
 homepage: true
 show_page_title: false
@@ -14,20 +14,19 @@ redirect_from:
 {% capture biography %}
 <section id="biography" class="home-section home-section--first profile-intro__biography" aria-label="Introduction">
   <p>
-    I am Peiyang Ni (倪培洋), a Master's student in Computer Science at the
+    I am a Master's student in Computer Science at the
     <a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of China (UESTC)</a>,
     advised by Prof. <a href="https://feinanshan.github.io/">Ping Hu</a> and
     Prof. <a href="https://scholar.google.com/citations?user=-bk1CrcAAAAJ">Xiaofeng Zhu</a>.
-    I received my B.Eng. degree in Computer Science from Guilin University of Electronic Technology (GUET).
+    Previously, I received my B.Eng. in Computer Science from
+    <a href="https://www.guet.edu.cn/">Guilin University of Electronic Technology (GUET)</a>.
   </p>
   <p>
-    My research focuses on image generation with diffusion and flow models, and physics-informed generative modeling
-    for high-fidelity 3D perception. I am particularly interested in LiDAR sensing and measurement formation, as well
-    as realistic generation and restoration under adverse weather.
+    My research focuses on image generation with diffusion and flow models, and physics-informed generative modeling for high-fidelity 3D perception. I am particularly interested in LiDAR sensing and measurement formation, as well as realistic generation and restoration under adverse weather. Additionally, I am broadly interested in and open to exploring world models and robotics.
   </p>
   <p>
-    I am currently applying to Computer Science PhD programs for Fall 2027. My TOEFL iBT score is 5.0/6 (100/120)
-    (Reading 5.0, Listening 5.0, Speaking 4.5, Writing 5.5; CEFR C1). If you are recruiting PhD students
+    I am actively applying to Computer Science PhD programs for Fall 2027. My TOEFL iBT score is 100/120 (5.0/6.0;
+    Reading 5.0, Listening 5.0, Speaking 4.5, Writing 5.5; CEFR C1). If you are recruiting PhD students
     and see a potential fit with my research interests, please feel free to
     <a href="mailto:peiyangni@std.uestc.edu.cn">contact me</a>.
   </p>
@@ -53,10 +52,11 @@ redirect_from:
         <strong>Peiyang Ni</strong>, Longyu Yang, Lu Zhang, Kuniaki Saito, Yap-Peng Tan, Fumin Shen,
         Heng Tao Shen, Xiaofeng Zhu, and Ping Hu
       </p>
-      <p class="publication-card__venue">CVPR 2026</p>
+      <p class="publication-card__venue">
+        <span class="publication-card__venue-tag publication-card__venue-tag--accepted">CVPR 2026</span>
+      </p>
       <p class="publication-card__summary">
-        A physics-grounded diffusion framework that reconstructs LiDAR structure before denoising reflectance intensity,
-        supported by real-prior adverse-weather simulation.
+        A physics-grounded diffusion framework that explicitly factorizes LiDAR generation by reconstructing 3D geometric structure first and generating reflectance intensity conditioned on recovered geometry, supported by real-prior adverse-weather simulation.
       </p>
       <div class="publication-links" aria-label="Publication resources">
         <a class="publication-link" href="https://openaccess.thecvf.com/content/CVPR2026/html/Ni_Structure-to-Intensity_Diffusion_for_Adverse-Weather_LiDAR_Generation_CVPR_2026_paper.html">
@@ -81,13 +81,14 @@ redirect_from:
       <p class="publication-card__authors">
         <strong>Peiyang Ni</strong>, Xiaorui Sun, Lu Zhang, Heng Tao Shen, Xiaofeng Zhu, and Ping Hu
       </p>
-      <p class="publication-card__venue">Under Review at IEEE Robotics and Automation Letters (RA-L)</p>
+      <p class="publication-card__venue">
+        <span class="publication-card__venue-tag publication-card__venue-tag--resubmitted">Revised and Resubmitted to IEEE RA-L</span>
+      </p>
       <p class="publication-card__summary">
-        A conditional rectified-flow framework that restores clean range-and-reflectance LiDAR scans from a single
-        adverse-weather observation, with range-aware flow scheduling and efficient few-step distillation.
+        A conditional rectified-flow framework that restores clean LiDAR scans from a single adverse-weather observation, scheduling transport progress by range-dependent sensing reliability to jointly suppress clutter and reconstruct absent geometry.
       </p>
       <div class="publication-links" aria-label="Publication resources">
-        <span class="publication-link publication-link--disabled" aria-disabled="true" title="Under review; paper link unavailable">
+        <span class="publication-link publication-link--disabled" aria-disabled="true" title="Revised and resubmitted; link available upon acceptance">
           <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Paper
         </span>
         <span class="publication-link publication-link--disabled" aria-disabled="true" title="Coming soon">
@@ -106,26 +107,26 @@ redirect_from:
   <h3 class="section-kicker">Education</h3>
   <div class="experience-list">
     <article class="experience-item">
-      <div class="experience-item__marker" aria-hidden="true"></div>
+      <img class="experience-item__badge" src="{{ site.baseurl }}/images/uestc-badge.png" alt="UESTC Logo" width="80" height="80" loading="lazy">
       <div class="experience-item__content">
         <div class="experience-item__heading">
           <h4>University of Electronic Science and Technology of China</h4>
-          <span class="experience-item__date">2024–Present</span>
+          <span class="experience-item__date">2024–2027 (expected)</span>
         </div>
         <p class="experience-item__role">M.Eng. in Computer Science · Advisors: Prof. <a href="https://feinanshan.github.io/">Ping Hu</a> and Prof. <a href="https://scholar.google.com/citations?user=-bk1CrcAAAAJ">Xiaofeng Zhu</a></p>
-        <p>GPA: 3.98 / 4.00 ｜ National Scholarship (approx. 2% nationally) ｜ Outstanding Graduate Student</p>
+        <p>GPA: 3.98 / 4.00 ｜ National Scholarship ｜ Outstanding Graduate</p>
       </div>
     </article>
 
     <article class="experience-item">
-      <div class="experience-item__marker" aria-hidden="true"></div>
+      <img class="experience-item__badge" src="{{ site.baseurl }}/images/guet-badge.svg" alt="GUET Logo" width="80" height="80" loading="lazy">
       <div class="experience-item__content">
         <div class="experience-item__heading">
           <h4>Guilin University of Electronic Technology</h4>
           <span class="experience-item__date">2020–2024</span>
         </div>
         <p class="experience-item__role">B.Eng. in Computer Science</p>
-        <p>Weighted Average: 89.8 / 100 ｜ National Scholarship (approx. 0.2% nationally) ｜ Province Outstanding Graduate</p>
+        <p>Weighted Average: 89.8 / 100 ｜ National Scholarship ｜ Outstanding Graduate (Provincial-level)</p>
       </div>
     </article>
   </div>
@@ -134,12 +135,12 @@ redirect_from:
 <section id="awards" class="home-section" aria-labelledby="awards-title">
   <h2 id="awards-title">Awards</h2>
   <ul class="award-list">
-    <li><span><strong>National Scholarship for Graduate Students (approx. 2% nationally)</strong>, <em>Ministry of Education of China</em></span><time>2026</time></li>
-    <li><span><strong>National Scholarship for Undergraduate Students (approx. 0.2% nationally)</strong>, <em>Ministry of Education of China</em></span><time>2023</time></li>
-    <li><span><strong>CASC Scholarship (Third Prize)</strong>, <em>China Aerospace Science and Technology Corporation</em></span><time>2022</time></li>
-    <li><span><strong>Guangxi Zhuang Autonomous Region People's Government Scholarship</strong></span><time>2021</time></li>
-    <li><span>Province Outstanding Graduate</span><time>2024</time></li>
-    <li><span>Outstanding Graduate Student, <em>University of Electronic Science and Technology of China</em></span><time>2025, 2026</time></li>
+    <li><span>Outstanding Graduate, <em>University of Electronic Science and Technology of China</em></span><time>2027</time></li>
+    <li><span><strong>National Scholarship for Graduate Students</strong>, <em>Ministry of Education of China</em></span><time>2026</time></li>
+    <li><span>Outstanding Graduate (Provincial-level), <em>Guangxi Zhuang Autonomous Region</em></span><time>2024</time></li>
+    <li><span><strong>National Scholarship for Undergraduate Students</strong>, <em>Ministry of Education of China</em></span><time>2023</time></li>
+    <li><span>CASC Scholarship (Third Prize), <em>China Aerospace Science and Technology Corporation</em></span><time>2022</time></li>
+    <li><span>Guangxi Zhuang Autonomous Region People's Government Scholarship</span><time>2021</time></li>
   </ul>
 </section>
 

@@ -43,6 +43,58 @@
   font-display: swap;
 }
 
+/*
+ * Alegreya is self-hosted for distinctive, elegant scholarly headings and navigation,
+ * matching nmwsharp.com's signature typography.
+ */
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Alegreya/static/Alegreya-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Alegreya/static/Alegreya-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Alegreya/static/Alegreya-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Alegreya/static/Alegreya-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Alegreya/static/Alegreya-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Alegreya/static/Alegreya-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
 /* Used to set the size for <em> */
 $doc-font-size              : 16;
 
@@ -54,6 +106,8 @@ $indent-var                 : 1.3em;
 $serif                      : "Libertinus Serif", "Linux Libertine", Georgia, "Times New Roman", serif;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$heading-font               : "Alegreya", $serif;
+$nav-font                   : "Alegreya", $serif;
 
 /* Sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
@@ -77,7 +131,7 @@ $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
 $global-font-family         : $serif;
-$header-font-family         : $serif;
+$header-font-family         : $heading-font;
 $caption-font-family        : $serif;
 
 /* ==========================================================================
