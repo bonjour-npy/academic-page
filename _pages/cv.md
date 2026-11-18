@@ -18,11 +18,11 @@ Education
 ======
 * **University of Electronic Science and Technology of China (UESTC)**, Chengdu, China
   * *M.Eng. in Computer Science*, 2024 -- 2027 (expected)
-  * GPA: 3.98 / 4.00 ｜ National Scholarship ｜ Outstanding Graduate
+  * GPA: 3.98 / 4.00 ｜ **National Scholarship** ｜ Outstanding Graduate
   * Advisors: Prof. [Ping Hu](https://feinanshan.github.io/) and Prof. [Xiaofeng Zhu](https://scholar.google.com/citations?user=-bk1CrcAAAAJ)
 * **Guilin University of Electronic Technology (GUET)**, Guilin, China
   * *B.Eng. in Computer Science*, 2020 -- 2024
-  * Weighted Average: 89.8 / 100 ｜ National Scholarship ｜ Outstanding Graduate (Provincial-level)
+  * Weighted Average: 89.8 / 100 ｜ **National Scholarship** ｜ Outstanding Graduate (Provincial-level)
 
 English Proficiency
 ======

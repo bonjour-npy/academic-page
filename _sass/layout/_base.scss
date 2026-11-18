@@ -64,6 +64,19 @@ p {
   margin-bottom: 1.3em;
 }
 
+b,
+strong {
+  font-family: "Alegreya", "Noto Serif SC", "Songti SC", "Source Han Serif SC", Georgia, serif;
+  font-weight: 700;
+}
+
+pre strong,
+code strong,
+pre b,
+code b {
+  font-family: inherit;
+}
+
 u,
 ins {
   text-decoration: none;
