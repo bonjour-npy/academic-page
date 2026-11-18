@@ -95,6 +95,19 @@
   font-display: swap;
 }
 
+/*
+ * Self-hosted lightweight Noto Serif SC subset for Chinese name,
+ * ensuring authentic Songti serif renders flawlessly on iOS / Safari.
+ */
+@font-face {
+  font-family: "Noto Serif SC";
+  src: url("../fonts/noto-serif-sc/noto-serif-sc-name.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  unicode-range: U+502a, U+57f9, U+6d0b;
+}
+
 /* Used to set the size for <em> */
 $doc-font-size              : 16;
 

@@ -203,8 +203,8 @@ body.homepage {
     padding-left: 0.65rem;
     border-left: 1px solid var(--global-dark-border-color);
     font-size: 0.88em;
-    font-weight: 400;
-    font-family: "Songti SC", "Noto Serif CJK SC", "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif !important;
+    font-weight: 500;
+    font-family: "Noto Serif SC", "Songti SC", "Source Han Serif SC", "STSong", "SimSun", serif !important;
   }
 
   &__pronunciation {
@@ -631,12 +631,12 @@ body.homepage {
     min-width: 80px;
     max-width: 80px;
     border-radius: 50%;
-    object-fit: contain;
-    background: #ffffff;
+    object-fit: cover;
+    background: transparent;
     border: 1px solid var(--global-border-color);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     flex-shrink: 0;
-    padding: 3px;
+    padding: 0;
     margin: 0;
   }
 
@@ -767,9 +767,9 @@ html[data-theme="dark"] {
   }
 
   .experience-item__badge {
-    background: #ffffff;
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   }
 }
 
